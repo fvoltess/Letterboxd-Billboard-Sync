@@ -1,0 +1,32 @@
+from bs4 import BeautifulSoup
+
+# Read HTML content from a file
+with open('page.html', 'r', encoding='utf-8') as file:
+    html_content = file.read()
+
+# Initialize BeautifulSoup
+soup = BeautifulSoup(html_content, 'html.parser')
+
+# Extract movie data
+movies = []
+for slide in soup.select('.swiper-slide'):
+    try:
+        title = slide.select_one('.name').text.strip()
+        genre = slide.select_one('.tagline').text.strip()
+        rating = slide.select_one('.hd').text.strip() if slide.select_one('.hd') else "N/A"
+        description = slide.select_one('.description').text.strip()
+        purchase_link = slide.select_one('.play-btn')['href']
+        movies.append({
+            'Title': title,
+            'Genre': genre,
+            'Rating': rating,
+            'Description': description,
+            'Purchase Link': purchase_link,
+        })
+    except AttributeError:
+        continue
+
+# Display the results
+import pandas as pd
+movies_df = pd.DataFrame(movies)
+print(movies_df)
