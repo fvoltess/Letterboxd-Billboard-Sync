@@ -1,4 +1,4 @@
-# Letterboxd Showcase Updater
+# Letterboxd Billboard Sync
 
 This repository automates the process of updating a Letterboxd list with the latest movies displayed on a local cinema's billboard. It’s a personal project aimed at saving time by automating a process I used to do manually: checking the billboard for new films and then assessing their quality on Letterboxd. It's specifically tailored for that cinema.
 
