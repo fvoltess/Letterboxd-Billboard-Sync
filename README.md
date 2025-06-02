@@ -21,7 +21,7 @@
   A configuration toggle allows running the script in headless mode, suitable for server environments or background automation.
 
 - **Logging:**  
-  Configurable logging gives detailed debug output or quiet mode depending on your setting.
+  Configurable logging gives detailed debug output or quiet mode depending on the setting.
 
 ---
 
