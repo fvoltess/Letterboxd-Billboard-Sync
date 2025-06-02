@@ -1,5 +1,5 @@
 # Letterboxd Billboard Sync  
-#### Video Demo: https://www.youtube.com/watch?v=YOUR_VIDEO_ID  
+#### Video Demo: https://www.youtube.com/watch?v=vXyTf7jTT3E 
 #### Description:
 
 **Letterboxd Billboard Sync** is a Python automation tool that syncs the current movie lineup from a local cinema (Showcase Argentina) directly into a curated Letterboxd list. This eliminates the need for manually checking the cinema website and updating the movie list, which was my original workflow. The goal was to automate a repetitive, tedious task with clean and functional code, using real-world libraries and tools like Selenium, BeautifulSoup, and Pandas.
