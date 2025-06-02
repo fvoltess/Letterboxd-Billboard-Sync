@@ -16,8 +16,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
 
-USERNAME = "fvoltes"              
-PASSWORD = "mortalkombat9"        
+USERNAME = "user"              
+PASSWORD = "password"        
 LIST_URL = "https://letterboxd.com/fvoltes/list/cartelera-cine-showcase-buenos-aires-1/edit/"
 BILLBOARD_URL = "https://entradas.todoshowcase.com/showcase/"
 CSV_PATH: Path = Path(__file__).resolve().parent / "movies.csv"
